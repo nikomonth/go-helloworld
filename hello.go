@@ -15,8 +15,6 @@ func main() {
 
 	http.HandleFunc("/", handler)
 	http.ListenAndServe(":"+port, nil)
-
-	fmt.Printf("hello, world\n")
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
